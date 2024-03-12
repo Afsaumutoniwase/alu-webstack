@@ -44,7 +44,7 @@ frontend http
 frontend https
 	mode http
 	timeout client 10s
-	bind *:443 ssl crt /etc/letsencrypt/live/www.afsa.tech/combined.pem
+	bind *:443 ssl crt /etc/letsencrypt/live/www.afsa.tech/fullchain.pem
 	default_backend allServers
 
 
