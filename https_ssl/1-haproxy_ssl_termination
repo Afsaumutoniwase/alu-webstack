@@ -30,7 +30,7 @@ frontend www-http
 
 # Default frontend to accept incoming connections on TCP port 443
 frontend www-https
-    bind *:443 ssl crt /etc/letsencrypt/archive/www.afsa.tech/fullchain1.p>
+    bind *:443 ssl crt /etc/letsencrypt/archive/www.afsa.tech/fullchain1.pem
     mode http
     default_backend www-backend
 
